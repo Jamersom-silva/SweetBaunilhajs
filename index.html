@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sweet Baunilha - Home</title>
+
+<!-- Font Awesome para ícones -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Swiper CSS via CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Sweet Baunilha" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/servicos.html">Serviços</a>
+        <a href="pages/galeria.html">Galeria</a>
+        <a href="pages/quem-somos.html">Quem Somos</a>
+        <a href="pages/contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="home-container">
+
+    <h1>Confira nossas opções incríveis para sua festa!</h1>
+
+    <!-- Swiper -->
+    <div class="swiper my-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/carrosel 1.jpg" alt="Cardápio Completo" data-route="pages/cardapio.html" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/carrosel 2.jpg" alt="Kits Prontos" data-route="pages/kits.html" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/carrosel 3.jpg" alt="Decoração e Buffet" data-route="pages/decoracao.html" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/carrosel 4.jpg" alt="Decoração e Buffets" data-route="pages/decoracao.html" />
+        </div>
+      </div>
+      <!-- Navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h2>PROPRIEDADE NO QUE FAZEMOS</h2>
+      <div class="icons-container">
+        <div class="icon-item">
+          <i class="fas fa-star"></i>
+          <h3>Excelência Garantida</h3>
+          <p>breve texto</p>
+        </div>
+        <div class="icon-item">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pronta Entrega</h3>
+          <p>Breve texto</p>
+        </div>
+        <div class="icon-item">
+          <i class="fas fa-user-graduate"></i>
+          <h3>Profissionalismo</h3>
+          <p>Breve texto</p>
+        </div>
+        <div class="icon-item">
+          <div class="payment-icons">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+          </div>
+          <h3>Parcelamos em até 10x</h3>
+          <p>Breve texto</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simple Banner -->
+    <div class="simple-banner">
+      <img src="images/banner.jpg" alt="Banner" />
+    </div>
+
+    <!-- Services Section -->
+    <div class="conheca-nossos-servicos">
+      <h2>Conheça nossos serviços</h2>
+      <div class="servicos-grid">
+        <div class="servico-item" onclick="navigateTo('pages/servicos.html')">
+          <img src="images/servico1.jpg" alt="Comida e Serviços" />
+          <h3>Comida e Serviços</h3>
+        </div>
+        <div class="servico-item" onclick="navigateTo('pages/pronta-entrega.html')">
+          <img src="images/servico2.jpg" alt="Pronta Entrega" />
+          <h3>Pronta Entrega</h3>
+        </div>
+        <div class="servico-item" onclick="navigateTo('pages/degustacao.html')">
+          <img src="images/servico3.jpg" alt="Degustação" />
+          <h3>Degustação</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback-carousel-container">
+      <h2>Depoimentos</h2>
+      <div class="feedback-list">
+        <div class="feedback-item">
+          <strong>Ana Silva</strong>
+          <p>O buffet superou todas as expectativas! Comida deliciosa e serviço impecável.</p>
+          <small>★★★★★ 15/01/2024</small>
+        </div>
+        <div class="feedback-item">
+          <strong>Carlos Oliveira</strong>
+          <p>Minha festa foi um sucesso graças à equipe profissional.</p>
+          <small>★★★★☆ 22/02/2024</small>
+        </div>
+        <div class="feedback-item">
+          <strong>Mariana Costa</strong>
+          <p>Recomendo a todos! Atenção especial aos detalhes.</p>
+          <small>★★★★★ 05/03/2024</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container">
+      <p>© 2024 Sweet Baunilha - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    // Inicializa o Swiper
+    const swiper = new Swiper('.my-swiper', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    });
+
+    // Clique nas imagens do carrossel para navegar
+    document.querySelectorAll('.swiper-slide img').forEach(img => {
+      img.addEventListener('click', () => {
+        const route = img.getAttribute('data-route');
+        if (route) {
+          window.location.href = route;
+        }
+      });
+    });
+
+    // Navegação nos serviços
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
