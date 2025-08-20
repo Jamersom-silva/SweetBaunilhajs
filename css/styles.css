@@ -189,9 +189,34 @@
   justify-content: space-between;
 }
 
+.top-header .container {
+  display: flex;
+  flex-direction: column; /* organiza verticalmente logo + menu */
+  align-items: center;    /* centraliza horizontalmente */
+  padding: 20px 0;
+}
+
+.logo-container .logo {
+  width: 120px; /* ajuste o tamanho */
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: -20px; /* puxa a logo 20px para cima */
+}
+
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* espaçamento entre os itens do menu */
+  padding: 0;
+  margin: 0;
+}
+
+
 .logo {
-  height: 50px;
+  height: 100px;
   cursor: pointer;
+  margin-top: -40px;
 }
 
 .main-nav a {
@@ -249,4 +274,14 @@
   margin-top: 20px;
   font-size: 13px;
   color: #777;
+}
+.footer-logo {
+  position: relative; /* permite mover a logo */
+  right:400px; 
+  margin: 20px 0;
+}
+
+.footer-logo img {
+  width: 200px; /* ajuste o tamanho conforme desejar */
+  height: auto;
 }
