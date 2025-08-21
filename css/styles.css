@@ -516,3 +516,75 @@
     min-width: 100%;
   }
 }
+
+
+/* Buffet Churrasco Section */
+.buffet-churrasco .buffet-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.buffet-churrasco .buffet-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.buffet-churrasco .buffet-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.buffet-churrasco .buffet-description {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buffet-churrasco .buffet-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.buffet-churrasco .btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.buffet-churrasco .btn-whatsapp i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.buffet-churrasco .btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .buffet-churrasco .buffet-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .buffet-churrasco .buffet-image,
+  .buffet-churrasco .buffet-description {
+    min-width: 100%;
+  }
+}
+
+
