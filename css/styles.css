@@ -277,7 +277,7 @@
 }
 .footer-logo {
   position: relative; /* permite mover a logo */
-  right:400px; 
+  right:300px; 
   margin: 20px 0;
 }
 
@@ -285,3 +285,83 @@
   width: 200px; /* ajuste o tamanho conforme desejar */
   height: auto;
 }
+
+/* Seção Buffet Almoço/Jantar */
+.buffet-almoco-jantar {
+  margin: 60px 0;
+  text-align: left;
+}
+
+.buffet-almoco-jantar h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.buffet-almoco-jantar .buffet-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buffet-almoco-jantar .buffet-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.buffet-almoco-jantar .buffet-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.buffet-almoco-jantar .buffet-image img:hover {
+  transform: scale(1.03);
+}
+
+.buffet-almoco-jantar .buffet-description {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.buffet-almoco-jantar .btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buffet-almoco-jantar .btn-whatsapp:hover {
+  background-color: #1ebe57;
+  transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .buffet-almoco-jantar .buffet-content {
+    flex-direction: column;
+  }
+
+  .buffet-almoco-jantar .buffet-description,
+  .buffet-almoco-jantar .buffet-image {
+    min-width: 100%;
+  }
+}
+
