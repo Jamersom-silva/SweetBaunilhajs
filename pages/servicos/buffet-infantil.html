@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sweet Baunilha - Buffet Infantil</title>
   <link rel="stylesheet" href="../../css/styles.css" />
+  <!-- Font Awesome para ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -27,8 +29,39 @@
   <!-- Conteúdo principal -->
   <main class="content">
     <h1>Buffet Infantil</h1>
-    <p>Descrição do serviço de Buffet Infantil do Sweet Baunilha.</p>
-    <!-- Conteúdo extra do BuffetInfantil.vue -->
+    
+
+    <!-- Seção Buffet Infantil -->
+    <section class="buffet-infantil">
+      <div class="container">
+        <h2>Nosso Buffet Infantil</h2>
+        <div class="buffet-content" style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-top:20px;">
+
+          <div class="buffet-image" style="flex:1; min-width:300px;">
+  <img src="https://images.unsplash.com/photo-1606851090622-cb65d47842c2?auto=format&fit=crop&w=800&q=80" 
+       alt="Buffet Infantil Sweet Baunilha" 
+       style="width:100%; border-radius:10px; object-fit:cover;">
+</div>
+
+          <!-- Descrição e botão WhatsApp -->
+          <div class="buffet-description" style="flex:1; min-width:300px;">
+            
+            <p>Transforme a festa do seu pequeno em um evento inesquecível com nosso Buffet Infantil. Decoração temática, doces deliciosos e muita diversão garantida!
+              Nosso Buffet Infantil é perfeito para celebrar aniversários e eventos especiais para crianças. 
+              Oferecemos decoração temática personalizada, cardápio infantil delicioso, mesas de doces coloridas e atividades recreativas para garantir diversão e alegria para os pequenos e tranquilidade para os pais.
+            </p>
+            
+            <!-- Botão WhatsApp -->
+            <a href="https://wa.me/5581999999999" target="_blank" class="btn-whatsapp" style="display:inline-flex; align-items:center; gap:10px; margin-top:20px; background-color:#25D366; color:#fff; padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:600; transition: background-color 0.3s;">
+              <i class="fab fa-whatsapp" style="font-size:1.3rem;"></i>
+              Solicitar Orçamento
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
  <!-- Footer -->
@@ -36,13 +69,12 @@
   <div class="container">
     <div class="footer-columns">
       
-         <!-- Logo no footer -->
- <div class="footer-logo">
-  <a href=""> <!-- link para a página inicial -->
-    <img src="images/logo.png" alt="Logo Sweet Baunilha" />
-  </a>
-</div>
-
+      <!-- Logo no footer -->
+      <div class="footer-logo">
+        <a href="../../index.html">
+          <img src="../../images/logo.png" alt="Logo Sweet Baunilha" />
+        </a>
+      </div>
 
       <!-- Redes sociais -->
       <div class="footer-section">
@@ -59,20 +91,19 @@
       </div>
 
       <!-- Contato -->
-<div class="footer-section">
-  <h4>Contato</h4>
-  <p>
-    <a href="tel:+5581999999999">
-      <i class="fas fa-phone"></i> (81) 99999-9999
-    </a>
-  </p>
-  <p>
-    <a href="mailto:contato@sweetbaunilha.com">
-      <i class="fas fa-envelope"></i> contato@sweetbaunilha.com
-    </a>
-  </p>
-</div>
-
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>
+          <a href="tel:+5581999999999">
+            <i class="fas fa-phone"></i> (81) 99999-9999
+          </a>
+        </p>
+        <p>
+          <a href="mailto:contato@sweetbaunilha.com">
+            <i class="fas fa-envelope"></i> contato@sweetbaunilha.com
+          </a>
+        </p>
+      </div>
 
       <!-- Pagamento -->
       <div class="footer-section">
@@ -82,8 +113,6 @@
         <p><i class="fab fa-pix"></i> Pix</p>
       </div>
     </div>
-
-    
 
     <div class="footer-bottom">
       <p>© 2024 Sweet Baunilha - Todos os direitos reservados.</p>
