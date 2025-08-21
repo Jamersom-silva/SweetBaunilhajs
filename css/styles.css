@@ -588,3 +588,143 @@
 }
 
 
+/* Coffee Break Section */
+.coffee-break .coffee-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.coffee-break .coffee-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.coffee-break .coffee-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.coffee-break .coffee-description {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coffee-break .coffee-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.coffee-break .btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.coffee-break .btn-whatsapp i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.coffee-break .btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .coffee-break .coffee-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .coffee-break .coffee-image,
+  .coffee-break .coffee-description {
+    min-width: 100%;
+  }
+}
+
+
+/* Feijoada Section */
+.feijoada-section .feijoada-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feijoada-section .feijoada-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feijoada-section .feijoada-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.feijoada-section .feijoada-description {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feijoada-section .feijoada-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.feijoada-section .btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.feijoada-section .btn-whatsapp i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.feijoada-section .btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .feijoada-section .feijoada-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feijoada-section .feijoada-image,
+  .feijoada-section .feijoada-description {
+    min-width: 100%;
+  }
+}
+
+
