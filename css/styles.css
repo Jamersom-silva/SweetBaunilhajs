@@ -232,59 +232,23 @@
   color: #E67E22;
 }
 
-/* Footer */
-/* Footer */
-.app-footer {
-  background: #f9f9f9;
-  padding: 40px 20px;
-  color: #333;
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-section {
+    margin: 15px 0;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
 }
 
-.footer-columns {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: left;
-}
 
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px;
-}
-
-.footer-section h4 {
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.footer-section a, 
-.footer-section p {
-  color: #555;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-section a:hover {
-  color: #d35400;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 13px;
-  color: #777;
-}
-.footer-logo {
-  position: relative; /* permite mover a logo */
-  right:300px; 
-  margin: 20px 0;
-}
-
-.footer-logo img {
-  width: 200px; /* ajuste o tamanho conforme desejar */
-  height: auto;
-}
 
    /* Seção Buffet  */
 
@@ -728,3 +692,85 @@
 }
 
 
+/* Footer Global */
+.app-footer {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center; /* centraliza a logo horizontalmente */
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 180px; /* ajusta o tamanho da logo */
+  height: auto;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* espaçamento entre os blocos */
+}
+
+.footer-section {
+  flex: 1 1 200px; /* cada bloco ocupa espaço igual, mas não quebra layout */
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 16px;
+}
+
+.footer-section a,
+.footer-section p {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-section a i {
+  margin-right: 8px;
+}
+
+.footer-section a:hover {
+  color: #d35400;
+}
+
+.footer-section p a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-section p a:hover {
+  color: #d35400;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+/* Garante que o footer fique sempre no final da página */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
