@@ -6,7 +6,6 @@
   <title>Sweet Baunilha - Serviços</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
 
@@ -17,48 +16,130 @@
         <img src="../images/logo.png" alt="Sweet Baunilha" class="logo" />
       </a>
       <nav class="main-nav">
-          <a href="../index.html">Home</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="galeria.html" class="active">Galeria</a>
+        <a href="../index.html">Home</a>
+        <a href="servicos.html" class="active">Serviços</a>
+        <a href="galeria.html">Galeria</a>
         <a href="quem-somos.html">Quem Somos</a>
         <a href="contato.html">Contato</a>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Delícias que <span>Encantam</span> seu Evento</h1>
+      <p>Descubra nossos serviços e transforme sua celebração em um momento inesquecível!</p>
+    </div>
+  </section>
+
   <!-- Conteúdo principal -->
   <main class="content">
-    <h1>Conheça nossos serviços</h1>
-
     <div class="servicos-grid">
+
       <div class="servico-item" onclick="window.location.href='servicos/almoco-jantar.html'">
-        <img src="https://source.unsplash.com/400x300/?food,dinner" alt="Almoço/Jantar" />
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop" alt="Almoço/Jantar" />
         <h3>Almoço/Jantar</h3>
       </div>
+
       <div class="servico-item" onclick="window.location.href='servicos/buffet-infantil.html'">
-        <img src="https://source.unsplash.com/400x300/?kids,party" alt="Buffet Infantil" />
+        <img src="https://i0.wp.com/tammymum.com/wp-content/uploads/2019/01/pexels-photo-587739.jpeg" alt="Buffet Infantil">
         <h3>Buffet Infantil</h3>
       </div>
+
       <div class="servico-item" onclick="window.location.href='servicos/churrasco.html'">
-        <img src="https://source.unsplash.com/400x300/?barbecue,churrasco" alt="Churrasco" />
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop" alt="Churrasco" />
         <h3>Churrasco</h3>
       </div>
+
       <div class="servico-item" onclick="window.location.href='servicos/coffee-break.html'">
-        <img src="https://source.unsplash.com/400x300/?coffee,break" alt="Coffee Break" />
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop" alt="Coffee Break" />
         <h3>Coffee Break</h3>
       </div>
+
       <div class="servico-item" onclick="window.location.href='servicos/feijoada.html'">
-        <img src="https://source.unsplash.com/400x300/?brazilian-food,feijoada" alt="Feijoada" />
+        <img src="https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?w=400&h=300&fit=crop" alt="Feijoada" />
         <h3>Feijoada</h3>
       </div>
+
       <div class="servico-item" onclick="window.location.href='servicos/casamento.html'">
-        <img src="https://source.unsplash.com/400x300/?buffet,food" alt="Buffet Casamento" />
+        <img src="https://eventos.minivilabuffet.com.br/imagens/orcamento-de-food-finger-buffet.jpg" alt="Buffet de Casamento">
         <h3>Buffet Casamento</h3>
       </div>
+
     </div>
   </main>
 
- <script src="../js/footer.js"></script>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <style>
+    /* Hero */
+    .hero-section {
+      background-color: #fce8dc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero-section h1 span {
+      color: #d87c6b;
+    }
+
+    .hero-section p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+
+    /* Grid de serviços */
+    .content {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .servicos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .servico-item {
+      flex: 0 1 300px;
+      background-color: #fdf4f0;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .servico-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .servico-item h3 {
+      padding: 15px 10px;
+      font-size: 1.2rem;
+      color: #5a3e36;
+    }
+
+    .servico-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+
+  <script>
+    // Carrega o footer global
+    fetch('../includes/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
