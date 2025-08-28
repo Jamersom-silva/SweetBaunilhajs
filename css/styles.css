@@ -1054,3 +1054,79 @@ main {
     font-size: 1rem;
   }
 }
+
+
+/* Delivery */
+.delivery-links {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.delivery-links h1 {
+  font-size: 2rem;
+  color: #c59d5f;
+  margin-bottom: 10px;
+}
+
+.delivery-links p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.delivery-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.delivery-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff; /* texto branco */
+}
+
+.delivery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.delivery-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1); /* deixa as logos brancas */
+}
+
+.delivery-card span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* cores individuais */
+.delivery-card.ifood {
+  background: #ea1d2c;
+}
+
+.delivery-card.goomer {
+  background: #0084ff;
+}
+.delivery-card.goomer span {
+  margin-top: 15px; /* ajusta a distância entre a logo e o texto "Pedir" */
+  display: block;
+}
+.delivery-card.goomer .delivery-logo {
+  width: 150px; /* aumente conforme necessário */
+  height: auto; /* mantém a proporção da imagem */
+}
+
+
