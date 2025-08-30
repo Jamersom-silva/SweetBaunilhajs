@@ -110,28 +110,79 @@
     border-radius: 10px;
   }
 
+/* ============================
+   SEÇÃO DEPOIMENTOS
+============================ */
+#depoimentos {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#depoimentos h2 {
+  font-size: 2rem;
+  color: #6c3d1f; /* marrom elegante */
+  margin-bottom: 40px;
+}
+
+/* GRID */
+#depoimentos .depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card */
+#depoimentos .depoimento-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#depoimentos .depoimento-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Texto do depoimento */
+#depoimentos .texto {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Info */
+#depoimentos .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+#depoimentos .info strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Estrelas */
+#depoimentos .estrelas {
+  color: #c59d5f; /* dourado */
+  font-size: 1.2rem;
+}
 
 
-  /* Feedback Section */
-  .feedback-carousel-container {
-    margin-top: 60px;
-    padding: 50px 0;
-    background: #f8f9fa;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-  }
+ 
 
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .my-swiper {
-      height: 300px;
-    }
-
-    .icons-container {
-      grid-template-columns: 1fr 1fr;
-    }
-
-  }
+  
 /* Container padrão */
 .container {
   max-width: 1200px;
