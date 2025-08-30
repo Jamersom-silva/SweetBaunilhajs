@@ -36,3 +36,4 @@ A ideia é criar uma vitrine online para mostrar os serviços, cardápios e form
 
 ```bash
 git clone https://github.com/Jamersom-silva/SweetBaunilhajs.git
+deploy: https://sweet-baunilhajs.vercel.app/
