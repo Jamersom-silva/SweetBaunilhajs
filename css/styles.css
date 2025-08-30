@@ -398,7 +398,7 @@
   transform: translateY(-3px);
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
   .buffet-almoco-jantar .buffet-content {
     flex-direction: column;
@@ -410,7 +410,7 @@
   }
 }
 
-/* Seção Buffet Infantil */
+
 .buffet-infantil {
   margin: 60px 0;
   text-align: left;
@@ -477,7 +477,7 @@
   transform: translateY(-3px);
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
   .buffet-infantil .buffet-content {
     flex-direction: column;
@@ -489,7 +489,7 @@
   }
 }
 
-/* Buffet Casamento Section */
+
 .buffet-casamento .buffet-content {
   display: flex;
   gap: 40px;
@@ -545,7 +545,7 @@
   background-color: #1ebe57;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .buffet-casamento .buffet-content {
     flex-direction: column;
@@ -559,7 +559,7 @@
 }
 
 
-/* Buffet Churrasco Section */
+
 .buffet-churrasco .buffet-content {
   display: flex;
   gap: 40px;
@@ -615,7 +615,7 @@
   background-color: #1ebe57;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .buffet-churrasco .buffet-content {
     flex-direction: column;
@@ -629,7 +629,7 @@
 }
 
 
-/* Coffee Break Section */
+
 .coffee-break .coffee-content {
   display: flex;
   gap: 40px;
@@ -685,7 +685,7 @@
   background-color: #1ebe57;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .coffee-break .coffee-content {
     flex-direction: column;
@@ -699,7 +699,7 @@
 }
 
 
-/* Feijoada Section */
+
 .feijoada-section .feijoada-content {
   display: flex;
   gap: 40px;
@@ -755,7 +755,7 @@
   background-color: #1ebe57;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .feijoada-section .feijoada-content {
     flex-direction: column;
@@ -778,12 +778,11 @@
 
 .footer-logo {
   display: flex;
-  justify-content: center; /* centraliza a logo horizontalmente */
-  margin-bottom: 30px;
+  justify-content: center; 
 }
 
 .footer-logo img {
-  max-width: 180px; /* ajusta o tamanho da logo */
+  max-width: 180px; 
   height: auto;
 }
 
@@ -791,11 +790,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px; /* espaçamento entre os blocos */
+  gap: 20px; 
 }
 
 .footer-section {
-  flex: 1 1 200px; /* cada bloco ocupa espaço igual, mas não quebra layout */
+  flex: 1 1 200px; 
   margin: 10px 0;
 }
 
@@ -840,7 +839,7 @@
   padding-top: 15px;
 }
 
-/* Garante que o footer fique sempre no final da página */
+
 body {
   display: flex;
   flex-direction: column;
@@ -852,7 +851,7 @@ main {
   flex: 1;
 }
 
-/* Quem Somos - Sweet Baunilha */
+
 .quem-somos-page {
   font-family: 'Playfair Display', serif;
   font-weight: 400; /* mais nítido */
@@ -861,14 +860,14 @@ main {
 }
 
 
-/* Container padrão */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* HERO */
+
 .hero-section {
   height: 70vh;
   display: flex;
@@ -893,7 +892,7 @@ main {
   font-size: 1.2rem;
 }
 
-/* HISTÓRIA */
+
 .historia-section {
   padding: 80px 0;
   text-align: center;
@@ -912,7 +911,7 @@ main {
   font-size: 1.1rem;
 }
 
-/* VALORES */
+
 .valores-section {
   padding: 60px 0;
   background-color: #fdf5e6;
@@ -935,7 +934,7 @@ main {
   margin-bottom: 10px;
 }
 
-/* SEGREDO */
+
 .segredo-section {
   padding: 60px 0;
   text-align: center;
@@ -955,7 +954,7 @@ main {
   max-width: 600px;
 }
 
-/* CTA */
+
 .cta-section {
   padding: 60px 0;
   text-align: center;
@@ -978,7 +977,7 @@ main {
   transform: translateY(-2px);
 }
 
-/* RESPONSIVO */
+
 @media(max-width: 768px){
   .hero-content h1 {
     font-size: 2rem;
@@ -990,7 +989,7 @@ main {
     font-size: 1rem;
   }
 }
-/* Contato Page */
+
 .contato-page .hero-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -1009,7 +1008,7 @@ main {
   margin: 0 auto;
 }
 
-/* Contato Section */
+
 .contato-section {
   padding: 60px 20px;
   background-color: #fff;
@@ -1023,14 +1022,14 @@ main {
   margin: 0 auto;
 }
 
-/* Informações de contato */
+
 .contato-info {
   flex: 1 1 300px;
   background-color: #fdf5e6;
   padding: 30px;
   border-radius: 8px;
 
-  /* Centralizar */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1053,7 +1052,7 @@ main {
   margin-right: 10px;
 }
 
-/* Formulário */
+
 .contato-form {
   flex: 2 1 500px;
   background-color: #f9f9f9;
@@ -1098,7 +1097,7 @@ main {
   transform: translateY(-2px);
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
   .contato-container {
     flex-direction: column;
@@ -1126,7 +1125,7 @@ main {
   background-color: #1ebe57;
   transform: translateY(-2px);
 }
-/* Galeria Sweet Baunilha */
+
 .galeria-page .hero-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -1145,7 +1144,7 @@ main {
   margin: 0 auto;
 }
 
-/* Grid da Galeria */
+
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1166,7 +1165,7 @@ main {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .galeria-page .hero-section h1 {
     font-size: 2rem;
@@ -1177,7 +1176,7 @@ main {
 }
 
 
-/* Delivery */
+
 .delivery-links {
   text-align: center;
   padding: 50px 20px;
@@ -1233,7 +1232,7 @@ main {
   font-weight: 600;
 }
 
-/* cores individuais */
+
 .delivery-card.ifood {
   background: #ea1d2c;
 }
